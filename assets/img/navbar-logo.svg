@@ -1,38 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="957" height="167" viewBox="0 0 957 167">
-  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""/>
-   </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?></metadata>
-<defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="54" viewBox="0 0 430 54">
+  <defs>
     <style>
       .cls-1 {
         font-size: 183.333px;
         text-anchor: middle;
-        font-family: Montserrat-Alt1;
+        font-family: Montserrat;
         font-weight: 800;
       }
 
@@ -41,7 +13,8 @@
       }
 
       .cls-2 {
-        fill: #ffbc2b;
+        fill: #ffc000;
+        font-family: Montserrat-Alt1;
       }
 
       .cls-3 {
@@ -49,5 +22,5 @@
       }
     </style>
   </defs>
-  <text id="rlab.dev" class="cls-1" transform="translate(478.5 147.612)"><tspan x="0">rlab<tspan class="cls-2">.</tspan><tspan class="cls-3">dev</tspan></tspan></text>
+  <text id="RLAB.dev" class="cls-1" transform="translate(215 53.289) scale(0.39 0.392)"><tspan x="0">RLAB<tspan class="cls-2">.</tspan><tspan class="cls-3">dev</tspan></tspan></text>
 </svg>
