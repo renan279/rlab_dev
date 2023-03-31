@@ -56,16 +56,12 @@ buttonPrev.addEventListener('click', () => {
   }
 });
 
-console.log('a')
-
 buttonNext.addEventListener('click', () => {
-  console.log('alo')
   searchPokemon += 1;
   renderPokemon(searchPokemon);
 });
 
 buttonGo.addEventListener('click', () => {
-  console.log('oi')
   var valorInput = document.getElementById("search").value;
   renderPokemon(valorInput.toLowerCase());
 });

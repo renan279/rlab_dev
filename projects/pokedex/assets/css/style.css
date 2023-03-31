@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Oxanium', cursive;
-}
+} */
 
-body{
+/* body{
   background-image: url('../img/background.gif');
   background-size: cover;
   text-align: center;
   width: 100%;
   height: auto;
-}
+} */
 
 main{
   display: inline-block;
