@@ -21,6 +21,11 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <!-- pokedex project -->
+    <link rel="stylesheet" href="./projects/pokedex/assets/css/style.css">
+    <script defer src="./projects/pokedex/assets/js/script.js"></script>
+
 </head>
 
 <body id="page-top">
@@ -130,11 +135,13 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1"
+                            onclick="mostrarConteudo()">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                            <!-- <button onclick="mostrarConteudo()">Mostrar conteúdo</button> -->
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Exemplo</div>
@@ -416,8 +423,8 @@
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
+                <!-- <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div> -->
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -425,6 +432,7 @@
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">Exemplo</h2>
                                 <p class="item-intro text-muted">Texto.</p>
+                                <div id="conteudo"></div>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
                                 <p>Texto.</p>
                                 <ul class="list-inline">
@@ -437,11 +445,11 @@
                                         Exemplo
                                     </li>
                                 </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                <!-- <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-times me-1"></i>
                                     Fechar
-                                </button>
+                                </button> -->
                             </div>
                         </div>
                     </div>
@@ -460,20 +468,44 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Exemplo</h2>
-                                <p class="item-intro text-muted">Texto.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                <p>Texto.</p>
-                                <ul class="list-inline">
-                                    <li>
-                                        <strong>Client:</strong>
-                                        Exemplo
-                                    </li>
-                                    <li>
-                                        <strong>Category:</strong>
-                                        Exemplo
-                                    </li>
-                                </ul>
+                                <main>
+                                    <img src="./projects/pokedex/assets/img/logo.png" class="logo" alt="logo">
+
+                                    <img src="./projects/pokedex/assets/img/pokedex.png" class="pokedex" alt="pokedex">
+
+                                    <img src="./projects/pokedex/assets/img/favicon.png" class="pokemon-image"
+                                        alt="pokemon-image">
+
+                                    <div class="dados">
+                                        <h1 class="data">
+                                            <span class="pokemon-number">000</span>
+                                            <span>-</span>
+                                            <span class="pokemon-name">Aa Bb Cc</span>
+                                        </h1>
+                                    </div>
+
+                                    <form class="form">
+                                        <input type="search" class="search" id="search" placeholder="Name or Number"
+                                            required>
+                                    </form>
+
+                                    <div class="buttons">
+                                        <button class="button btn-prev">&lt;</button>
+                                        <button class="button btn-next">&gt;</button>
+                                        <button class="button btn-go">Go!</button>
+                                        <label for="toggle-1" class="btn-plus">+</label>
+                                        <input type="checkbox" id="toggle-1">
+                                        <div class="conteudo">
+                                            <h2>Details</h2>
+                                            <h3>Type: <span class="pokemon-type">Tipo</span></h3>
+                                            <h4>Height: <span class="pokemon-height">Altura "</span></h4>
+                                            <h4>Weight: <span class="pokemon-weight">Peso lb</span></h4>
+                                        </div>
+                                    </div>
+
+
+
+                                </main>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-times me-1"></i>

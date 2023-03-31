@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+body{
+  background-image: url('../img/background.gif');
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+main{
+  display: inline-block;
+  margin-top: 30%;
+  padding: 15px;
+  position: relative;
+}
+
+@media screen and (min-width: 675px) {
+  main{
+    margin-top: 20%;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  main{
+    margin-top: 12%;
+  }
+}
+
+.logo{
+  margin-top: -33%;
+  max-width: 94%;
+  position: absolute;
+}
+
+.pokedex{
+  width: 100%;
+  height: auto;
+}
+
+.pokemon-image{
+  width: 80px;
+  height: auto;
+  position: absolute;
+  bottom: 55%;
+  left: 50%;
+  transform: translate(-63%, 20%);
+}
+
+.form {
+  position: absolute;
+  width: 65%;
+  top: 65%;
+  left: 13.5%;
+}
+
+.buttons{
+  position: absolute;
+  width: 65%;
+  top: 73%;
+  left: 13.5%;
+}
+
+.dados{
+  position: absolute;
+  width: 65%;
+  top: 55%;
+  left: 8%;
+}
+
+.data{
+  color: rgb(39, 39, 39);
+  text-transform: capitalize;
+  font-size: 24px;  
+}
+
+.search {
+  width: 100%;
+  padding: 4%;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #3a444d;
+  font-size: clamp(8px, 5vw, 1rem);
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
+}
+
+.button{
+  margin-top: 4%;
+  width: 49%;
+  padding: 4%;
+  outline: none;
+  border: 2px solid #111;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #444;
+  font-size: clamp(8px, 5vw, 1rem);
+  box-shadow: -3px 4px 0 #222, -5px 7px 0 #111;
+  color: white;
+  background-color: #333;;
+}
+
+.btn-plus{
+  margin-top: 4%;
+  width: 49%;
+  padding: 4%;
+  outline: none;
+  border: 2px solid rgb(136, 14, 14);
+  border-radius: 5px;
+  font-weight: 600;
+  color: rgb(179, 57, 57);
+  font-size: clamp(8px, 5vw, 1rem);
+  box-shadow: -3px 4px 0 rgb(110, 17, 17), -5px 7px 0 rgb(121, 1, 1);
+  color: white;
+  background-color: rgb(255, 36, 36);
+}
+
+input[type=checkbox]:checked ~ .btn-plus{
+  background-color: rgb(153, 29, 29);
+  box-shadow: 3px -4px 0 rgb(110, 17, 17), 5px -7px 0 rgb(121, 1, 1);
+  margin-top: 6%;
+}
+
+.pokemon-type,
+.pokemon-weight,
+.pokemon-height{
+  font-weight: 400;
+}
+
+/* Checkbox Hack */
+input[type=checkbox] {
+  position: absolute;
+  display: none;
+}
+
+label { 
+ -webkit-appearance: push-button;
+ -moz-appearance: button; 
+ display: inline-block;
+ margin: 60px 0 10px 0;
+ cursor: pointer;
+}
+
+/* Default State */
+.conteudo {
+  background: white;
+  width: 400px;
+  height: 600px;
+  line-height: 50px;
+  color: rgb(39, 39, 39);
+  text-align: center;
+  display: none;
+
+  position: absolute;
+  left: 377px;
+  top: -450px;
+
+  border-radius: 0px 15px 15px 0px;
+}
+
+/* Toggled State */
+input[type=checkbox]:checked ~ .conteudo {
+  display: inline-block;
+}

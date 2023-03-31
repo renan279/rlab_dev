@@ -1,61 +1,4 @@
-function mostrarConteudo() {
-    // Carrega o conteúdo do arquivo HTML desejado
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'projects/pokedex/index.html', true);
-    xhr.onload = function () {
-        if (this.status === 200) {
-            // Exibe o conteúdo do arquivo HTML na página atual
-            document.getElementById('conteudo').innerHTML = this.responseText;
-        }
-    };
-    xhr.send();
-}
-
-window.addEventListener('DOMContentLoaded', event => {
-
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
-
-    };
-
-    // Shrink the navbar 
-    navbarShrink();
-
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
-
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 74,
-        });
-    };
-
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
-
-    const pokemonName = document.querySelector('.pokemon-name');
+const pokemonName = document.querySelector('.pokemon-name');
 const pokemonNumber = document.querySelector('.pokemon-number');
 const pokemonImage = document.querySelector('.pokemon-image');
 
@@ -128,13 +71,3 @@ buttonGo.addEventListener('click', () => {
 });
 
 renderPokemon(searchPokemon);
-
-});
-
-
-
-
-
-
-
-
