@@ -9,7 +9,6 @@ const form = document.querySelector('.form');
 const input = document.querySelector('.search');
 const buttonPrev = document.querySelector('.btn-prev');
 const buttonNext = document.querySelector('.btn-next');
-const buttonGo = document.querySelector('.btn-go');
 
 const fetchPokemon = async (pokemon) => {
   const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
@@ -59,11 +58,6 @@ buttonPrev.addEventListener('click', () => {
 buttonNext.addEventListener('click', () => {
   searchPokemon += 1;
   renderPokemon(searchPokemon);
-});
-
-buttonGo.addEventListener('click', () => {
-  var valorInput = document.getElementById("search").value;
-  renderPokemon(valorInput.toLowerCase());
 });
 
 renderPokemon(searchPokemon);

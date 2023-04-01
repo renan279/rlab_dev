@@ -23,8 +23,12 @@
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
     <!-- pokedex project -->
-    <link rel="stylesheet" href="./projects/pokedex/assets/css/style.css">
-    <script defer src="./projects/pokedex/assets/js/script.js"></script>
+    <link rel="stylesheet" href="./projects/pokedex/css/pokedex.css">
+    <script src="./projects/pokedex/js/pokedex.js" defer></script>
+
+    <!-- mario project -->
+    <link rel="stylesheet" href="./projects/mario/css/style.css">
+    <script src="./projects/mario/js/script.js" defer></script>
 
 </head>
 
@@ -135,8 +139,7 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1"
-                            onclick="mostrarConteudo()">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
@@ -187,7 +190,8 @@
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Vídeochamada</div>
-                            <div class="portfolio-caption-subheading text-muted">App de videochamadas com venda de produtos</div>
+                            <div class="portfolio-caption-subheading text-muted">App de videochamadas com venda de
+                                produtos</div>
                         </div>
                     </div>
                 </div>
@@ -419,6 +423,9 @@
         </div>
     </footer>
     <!-- Portfolio Modals-->
+
+    <!-- <div id="conteudo"></div> -->
+
     <!-- Portfolio item 1 modal popup-->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -432,8 +439,42 @@
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">Super Mario Jump</h2>
                                 <p class="item-intro text-muted">Minigame</p>
-                                <!-- <div id="conteudo"></div> -->
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                <!-- <img class="img-fluid d-block mx-auto" src="./projects/mario/img/portfolio/1.jpg" alt="..." /> -->
+
+                                <body>
+                                    <div class="game-board">
+
+                                        <img src="./projects/mario/img/pipe.png" class="score" alt="score">
+                                        <div class="text-score">
+                                            <span>x</span><span class="count-score">0</span>
+                                        </div>
+
+                                        <img src="./projects/mario/img/favicon.png" class="hp" alt="hp">
+                                        <div class="text-hp">
+                                            <span class="count-hp">3</span><span>x</span>
+                                        </div>
+
+                                        <img src="./projects/mario/img/clouds.png" class="clouds" alt="clouds">
+                                        <img src="./projects/mario/img/mario.gif" class="mario" alt="mario">
+                                        <img src="./projects/mario/img/pipe.png" class="pipe" alt="pipe">
+                                        <!-- <img src="./projects/mario/img/ground.png" class="ground" alt="ground"> -->
+                                        <img src="./projects/mario/img/background.png" class="background"
+                                            alt="background">
+
+                                    </div>
+
+                                    <div class="chao">
+
+                                        <!-- <img src="./projects/mario/img/clouds.png" class="clouds" alt="clouds">
+                                      <img src="./projects/mario/img/mario.gif" class="mario" alt="mario">
+                                      <img src="./projects/mario/img/pipe.png" class="pipe" alt="pipe"> -->
+                                        <img src="./projects/mario/img/ground.png" class="ground" alt="ground">
+                                        <!-- <img src="./projects/mario/img/background.png" class="background" alt="background"> -->
+
+                                    </div>
+
+                                </body>
+
                                 <p>Aperte F5 para reiniciar o mingigame.</p>
                                 <ul class="list-inline">
                                     <li>
@@ -471,9 +512,10 @@
                                 <h2 class="text-uppercase">Pokédex</h2>
                                 <p class="item-intro text-muted">Minigame com utilização de API.</p>
                                 <main>
-                                    <img src="./projects/pokedex/assets/img/logo.png" class="logo" alt="logo">
-                                    <img src="./projects/pokedex/assets/img/pokedex.png" class="pokedex" alt="pokedex">
-                                    <img src="./projects/pokedex/assets/img/favicon.png" class="pokemon-image" alt="pokemon-image">
+                                    <img src="./projects/pokedex/img/logo.png" class="logo" alt="logo">
+                                    <img src="./projects/pokedex/img/pokedex.png" class="pokedex" alt="pokedex">
+                                    <img src="./projects/pokedex/img/favicon.png" class="pokemon-image"
+                                        alt="pokemon-image">
 
                                     <div class="dados">
                                         <h1 class="data">
@@ -512,7 +554,7 @@
                                         <strong>Link:</strong>
                                         <a href="https://pokeapi.co/" target="_blank">
                                             https://pokeapi.co/
-                                        </a>                                        
+                                        </a>
                                     </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
@@ -539,7 +581,8 @@
                             <div class="modal-body">
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">Notificação de Atracagem</h2>
-                                <p class="item-intro text-muted">Projeto Desenvolvido com base nos dados da Paranaguá Pilots.</p>
+                                <p class="item-intro text-muted">Projeto Desenvolvido com base nos dados da Paranaguá
+                                    Pilots.</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
                                 <p>Texto.</p>
                                 <ul class="list-inline">
@@ -551,7 +594,7 @@
                                         <strong>Link:</strong>
                                         <a href="http://www.paranaguapilots.com.br/" target="_blank">
                                             http://www.paranaguapilots.com.br/
-                                        </a>                                        
+                                        </a>
                                     </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
@@ -584,7 +627,7 @@
                                 <ul class="list-inline">
                                     <li>
                                         <strong>Feito com:</strong>
-                                        HTML/CSS/JS/AngularJS 
+                                        HTML/CSS/JS/AngularJS
                                     </li>
                                     <li>
                                         <strong>Link:</strong>
