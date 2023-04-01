@@ -15,7 +15,7 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden; /*esconde o q estiver fora da tela */
-  background: linear-gradient(#87ceeb, #e0f6ff);
+  background: linear-gradient(#87ceeb, #e0f6ff)!important;
   z-index: -1;
 }
 

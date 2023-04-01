@@ -71,7 +71,7 @@ main{
 .dados{
   position: absolute;
   width: 65%;
-  top: 55%;
+  top: 53%;
   left: 8%;
 }
 
@@ -105,7 +105,7 @@ main{
   font-size: clamp(8px, 5vw, 1rem);
   box-shadow: -3px 4px 0 #222, -5px 7px 0 #111;
   color: white;
-  background-color: #333;;
+  background-color: #333;
 }
 
 .btn-plus{
@@ -169,4 +169,24 @@ label {
 /* Toggled State */
 input[type=checkbox]:checked ~ .conteudo {
   display: inline-block;
+}
+
+@media screen and (max-width: 475px) {
+  .dados{
+    top: 50%;
+    left: 15%;
+  }
+
+  .pokemon-image{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+  }
+
+  .button{
+    width: 48%;
+  }
 }
