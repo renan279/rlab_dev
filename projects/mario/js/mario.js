@@ -11,20 +11,18 @@ let hp = +document.querySelector('.count-hp').innerHTML;
 const countScore = document.querySelector('.count-score');
 let score = +document.querySelector('.count-score').innerHTML;
 
-
-
 const jump = () => {
   mario.classList.add('jump');
   setTimeout(() => { mario.classList.remove('jump'); }, 500);
 }
 
-const fetchPokemon = async (pokemon) => {
-  const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
-  if (APIResponse.status === 200) {
-    const data = await APIResponse.json();
-    return data;
-  }
-}
+// const fetchPokemon = async (pokemon) => {
+//   const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
+//   if (APIResponse.status === 200) {
+//     const data = await APIResponse.json();
+//     return data;
+//   }
+// }
 
 const loop = setInterval(() => {
   const pipePosition = pipe.offsetLeft;
@@ -53,7 +51,7 @@ const loop = setInterval(() => {
       pipe.style.left = `${pipePosition}px`;
       mario.style.animation = 'none';
       mario.style.bottom = `${marioPosition}px`;
-      mario.src = './assets/img/game-over.png'
+      mario.src = './projects/mario/img/game-over.png'
       mario.style.width = '75px';
       mario.style.marginLeft = '50px';
 
